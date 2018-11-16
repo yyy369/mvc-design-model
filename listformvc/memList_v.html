@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简易通讯录</title>
+</head>
+<body>
+<table border="1" width="400">
+    <?php foreach ($arr as $one): ?>
+        
+            <tr>
+                <td><?=$one['name']?></td>
+                <td><?=$one['telephone']?></td>
+                <td><a href="lookinfo.php?id=<?=$one['id']?>">查看详情</a></td>
+            </tr>        
+    <?php endforeach ?>
+</table>
+</body>
+</html>
